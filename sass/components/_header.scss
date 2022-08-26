@@ -1,0 +1,134 @@
+.header {
+	background-color: var(--white-text-color);
+	border-bottom: 1px solid var(--border-heder-line);
+}
+
+.header__container,
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.navigation__logo {
+	margin-right: 93px;
+}
+
+.navigation__logo-part1,
+.navigation__logo-part2,
+.navigation__logo-part3 {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: 0.03em;
+}
+
+.navigation__logo-part1 {
+	color: var(--blue-color);
+}
+
+.navigation__logo-part2 {
+	color: var(--logo-part2-color);
+}
+
+.site-nav__link {
+	display: block;
+	position: relative;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--title-text-color);
+	transition: color 250ms var(--timing-function);
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--blue-color);
+	}
+}
+
+.site-nav {
+	display: flex;
+
+	& .current {
+		color: var(--blue-color);
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			display: block;
+			width: 100%;
+			height: 4px;
+			border-radius: 2px;
+			background-color: var(--blue-color);
+		}
+	}
+}
+
+.site-nav__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.site-adress {
+	display: flex;
+	margin-left: auto;
+	justify-content: center;
+	align-items: center;
+	color: var(--primary-text-color);
+}
+
+.site-adress__item {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	justify-content: center;
+	align-items: center;
+
+	.mail {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
+
+	&:focus,
+	&:hover,
+	&:active {
+		color: var(--blue-color);
+		cursor: pointer;
+	}
+}
+
+.site-adress__icon {
+	display: flex;
+	margin-right: 10px;
+	justify-content: center;
+	align-items: center;
+	fill: currentColor;
+	transition: color 250ms var(--timing-function);
+}
+
+.site-adress__link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+	transition: color 250ms var(--timing-function);
+
+	.site-adress__item:focus &,
+	.site-adress__item:hover &,
+	.site-adress__item:active & {
+		color: var(--blue-color);
+		cursor: pointer;
+	}
+}

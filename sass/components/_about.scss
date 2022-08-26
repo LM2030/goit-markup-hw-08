@@ -1,0 +1,28 @@
+.about__list {
+    display: flex;
+    gap: 30px;
+}
+
+.about__card {
+    position: relative;
+}
+
+.about__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    left: 0;
+    bottom: 0;
+    background-color: var(--bgcolor-wedo);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    margin: 0;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}

@@ -1,0 +1,39 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --white-text-color: #ffffff;
+    --blue-color: #2196f3;
+    --blue-hover-color: #188ce8;
+    --background-back-color: #2f303a;
+    --logo-part2-color: #000000;
+    --footer-color: rgba(255, 255, 255, 0.6);
+    --button-bg-color: #f5f4fa;
+    --team-bg-color: #f5f4fa;
+    --main-bg-color: #f5f5f5;
+    --border-heder-line: #ececec;
+    --border-card-line: #eeeeee;
+    --icon-main-color: #afb1b8;
+    --hero-bg-color: #c4c4c4;
+    --hero-bg-overlay: rgba(47, 48, 58, 0.4);
+    --bgcolor-wedo: rgba(47, 48, 58, 0.8);
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --bgcolor-exampl-overlay: rgba(33, 150, 243, 0.9);
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
