@@ -1,17 +1,31 @@
 .clients__list {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 30px;
+
+	@include mobile {
+		max-width: 480px;
+	}
+
+	@include tablet {
+		max-width: 768px;
+	}
+
+	@include desctop {
+		max-width: 1200px;
+	}
 }
 
 .client__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 92px;
+	width: 210px;
 	fill: var(--icon-main-color);
 	border: 1px solid var(--icon-main-color);
 	border-radius: 4px;
-	width: 170px;
-	height: 92px;
 	transition: fill 250ms var(--timing-function), border-color 250ms var(--timing-function);
 
 	&:hover,
@@ -19,5 +33,13 @@
 		fill: var(--blue-color);
 		border-color: var(--blue-color);
 		cursor: pointer;
+	}
+
+	@include tablet {
+		width: 226px;
+	}
+
+	@include desctop {
+		width: 170px;
 	}
 }

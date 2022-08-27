@@ -60,7 +60,7 @@
 				<section class="benefits section">
 					<h2 class="visually-hidden">Наші переваги</h2>
 					<ul class="benefits__list">
-						<li class="list">
+						<li class="benefits__item list">
 							<div class="benefits__blok">
 								<svg class="icon" width="70px" height="70px">
 									<use href="./images/icons.svg#icon-antenna"></use>
@@ -71,7 +71,7 @@
 								>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
 							</p>
 						</li>
-						<li class="list">
+						<li class="benefits__item list">
 							<div class="benefits__blok">
 								<svg class="icon" width="70px" height="70px">
 									<use href="./images/icons.svg#icon-clock"></use>
@@ -80,7 +80,7 @@
 							<h3 class="benefits__title">ПУНКТУАЛЬНІСТЬ</h3>
 							<p class="benefits__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе. </p>
 						</li>
-						<li class="list">
+						<li class="benefits__item list">
 							<div class="benefits__blok">
 								<svg class="icon" width="70px" height="70px">
 									<use href="./images/icons.svg#icon-diagram"></use>
@@ -89,7 +89,7 @@
 							<h3 class="benefits__title">ПЛАНУВАННЯ</h3>
 							<p class="benefits__text">Так само консультація з широким активом значною мірою зумовлює. </p>
 						</li>
-						<li class="list">
+						<li class="benefits__item list">
 							<div class="benefits__blok">
 								<svg class="icon" width="70px" height="70px">
 									<use href="./images/icons.svg#icon-astronaut"></use>
@@ -126,8 +126,20 @@
 				<div class="container">
 					<h2 class="team__head">Наша Команда</h2>
 					<ul class="team__list list">
-						<li class="team__card"
-							><img src="./images/img-1-4.jpg" alt="хлопец в очках" width="270" height="260" />
+						<li class="team__card">
+							<picture>
+								<source srcset="./images/img-1-4.jpg 1x, ./images/img-1-4-x2.jpg 2x" media="(min-width: 1200px)" />
+								<source
+									srcset="./images/img-1-4-tablet.jpg 1x, ./images/img-1-4-tablet-x2.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/img-1-4-mob.jpg 1x, ./images/img-1-4-mob-x2.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/img-1-4.jpg" alt="хлопец в очках" />
+							</picture>
+
 							<h3 class="team__name">Ігор Дем'яненко</h3>
 							<p lang="en" class="team__job">Product Designer</p>
 							<ul class="social list">
@@ -154,8 +166,20 @@
 								></li>
 							</ul>
 						</li>
-						<li class="team__card"
-							><img src="./images/img-1-5.jpg" alt="баришня в очках" width="270" height="260" />
+						<li class="team__card">
+							<picture>
+								<source srcset="./images/img-1-5.jpg 1x, ./images/img-1-5-x2.jpg 2x" media="(min-width: 1200px)" />
+								<source
+									srcset="./images/img-1-5-tablet.jpg 1x, ./images/img-1-5-tablet-x2.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/img-1-5-mob.jpg 1x, ./images/img-1-5-mob-x2.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/img-1-5.jpg" alt="баришня в очках" />
+							</picture>
+
 							<h3 class="team__name">Ольга Рєпіна</h3>
 							<p lang="en" class="team__job">Frontend Developer</p>
 							<ul class="social list">
@@ -182,8 +206,20 @@
 								></li>
 							</ul>
 						</li>
-						<li class="team__card"
-							><img src="./images/img-1-6.jpg" alt="хлопец без очков" width="270" height="260" />
+						<li class="team__card">
+							<picture>
+								<source srcset="./images/img-1-6.jpg 1x, ./images/img-1-6-x2.jpg 2x" media="(min-width: 1200px)" />
+								<source
+									srcset="./images/img-1-6-tablet.jpg 1x, ./images/img-1-6-tablet-x2.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/img-1-6-mob.jpg 1x, ./images/img-1-6-mob-x2.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/img-1-6.jpg" alt="хлопец без очков" />
+							</picture>
+
 							<h3 class="team__name">Микола Тарасов</h3>
 							<p lang="en" class="team__job">Marketing</p>
 							<ul class="social list">
@@ -210,8 +246,20 @@
 								></li>
 							</ul>
 						</li>
-						<li class="team__card"
-							><img src="./images/img-1-7.jpg" alt="похожий хлопец в очках" width="270" height="260" />
+						<li class="team__card">
+							<picture>
+								<source srcset="./images/img-1-7.jpg 1x, ./images/img-1-7-x2.jpg 2x" media="(min-width: 1200px)" />
+								<source
+									srcset="./images/img-1-7-tablet.jpg 1x, ./images/img-1-7-tablet-x2.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/img-1-7-mob.jpg 1x, ./images/img-1-7-mob-x2.jpg 2x"
+									media="(max-width: 767px)"
+								/>
+								<img src="./images/img-1-7.jpg" alt="похожий хлопец в очках" />
+							</picture>
+
 							<h3 class="team__name">Михайло Єрмаков</h3>
 							<p lang="en" class="team__job">UI Designer</p>
 							<ul class="social list">
@@ -245,7 +293,7 @@
 				<div class="container">
 					<h2 class="clients__head">Постійні клієнти</h2>
 					<ul class="clients__list list">
-						<li
+						<li class="clients__item"
 							><a href="" class="client__link">
 								<svg width="106px" height="60px">
 									<use href="./images/icons.svg#icon-logop1"></use></svg></a
@@ -282,51 +330,55 @@
 		<footer class="footer">
 			<div class="container list">
 				<div class="footer__blocks list">
-					<div class="footer__nav">
-						<a href="" class="link">
-							<p lang="en" class="navigation__logo-footer"
-								><span class="navigation__logo-part1">Web</span><span class="navigation__logo-part3">Studio</span></p
-							>
-						</a>
-						<address>
-							<ul class="list">
-								<li class="footer__list"
-									><a href="https://goo.gl/maps/LEngHqbAJeuQZEvs9" target="_blank" class="city__adress link"
-										>м. Київ, пр-т Лесі Українки, 26</a
+					<div class="footer__tablet">
+						<div class="footer__nav">
+							<a href="" class="link">
+								<p lang="en" class="navigation__logo-footer"
+									><span class="navigation__logo-part1">Web</span><span class="navigation__logo-part3">Studio</span></p
+								>
+							</a>
+							<address>
+								<ul class="footer__nav-list list">
+									<li class="footer__nav-list"
+										><a href="https://goo.gl/maps/LEngHqbAJeuQZEvs9" target="_blank" class="city__adress link"
+											>м. Київ, пр-т Лесі Українки, 26</a
+										>
+									</li>
+									<li class="footer__nav-list"
+										><a href="mailto:info@example.com" class="footer__contacts link">info@example.com</a>
+									</li>
+									<li class="footer__nav-list"
+										><a href="tel:+380961111111" class="footer__contacts link">+380961111111</a></li
 									>
-								</li>
-								<li class="footer__list"
-									><a href="mailto:info@example.com" class="footer__contacts link">info@example.com</a>
-								</li>
-								<li><a href="tel:+380961111111" class="footer__contacts link">+380961111111</a></li>
+								</ul>
+							</address>
+						</div>
+						<div class="footer__social">
+							<p class="footer__title">приєднуйтесь</p>
+							<ul class="footer__list list">
+								<li class="footer__social-item"
+									><a href="" class="footer__social-link">
+										<svg class="footer-icon" width="20px" height="20px">
+											<use href="./images/icons.svg#icon-instagram"></use>
+										</svg> </a
+								></li>
+								<li class="footer__social-item"
+									><a href="" class="footer__social-link">
+										<svg class="footer-icon" width="20px" height="20px">
+											<use href="./images/icons.svg#icon-twitter"></use></svg></a
+								></li>
+								<li class="footer__social-item"
+									><a href="" class="footer__social-link">
+										<svg class="footer-icon" width="20px" height="20px">
+											<use href="./images/icons.svg#icon-facebook"></use></svg></a
+								></li>
+								<li class="footer__social-item"
+									><a href="" class="footer__social-link">
+										<svg class="footer-icon" width="20px" height="20px">
+											<use href="./images/icons.svg#icon-linkedin"></use></svg></a
+								></li>
 							</ul>
-						</address>
-					</div>
-					<div class="footer__social">
-						<p class="footer__title">приєднуйтесь</p>
-						<ul class="footer__list list">
-							<li class="footer__social-item"
-								><a href="" class="footer__social-link">
-									<svg class="footer-icon" width="20px" height="20px">
-										<use href="./images/icons.svg#icon-instagram"></use>
-									</svg> </a
-							></li>
-							<li class="footer__social-item"
-								><a href="" class="footer__social-link">
-									<svg class="footer-icon" width="20px" height="20px">
-										<use href="./images/icons.svg#icon-twitter"></use></svg></a
-							></li>
-							<li class="footer__social-item"
-								><a href="" class="footer__social-link">
-									<svg class="footer-icon" width="20px" height="20px">
-										<use href="./images/icons.svg#icon-facebook"></use></svg></a
-							></li>
-							<li class="footer__social-item"
-								><a href="" class="footer__social-link">
-									<svg class="footer-icon" width="20px" height="20px">
-										<use href="./images/icons.svg#icon-linkedin"></use></svg></a
-							></li>
-						</ul>
+						</div>
 					</div>
 					<div class="footer__join">
 						<p class="footer__title">підпишіться на розсилку</p>

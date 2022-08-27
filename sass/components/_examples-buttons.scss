@@ -1,11 +1,18 @@
 .examples__buttons {
-	width: 575px;
 	display: flex;
+	flex-wrap: wrap;
 	margin: auto;
+	justify-content: flex-start;
+	gap: 8px;
 	margin-bottom: 50px;
-	justify-content: center;
 	border: none;
 	border-radius: 4px;
+	@include tablet {
+		justify-content: center;
+	}
+	@include desctop {
+		justify-content: center;
+	}
 }
 
 .examples__button {
@@ -35,8 +42,4 @@
 		color: var(--white-text-color);
 		background-color: var(--blue-color);
 	}
-}
-
-.examples__block:not(:last-child) {
-	margin-right: 8px;
 }

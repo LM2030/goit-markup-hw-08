@@ -1,45 +1,82 @@
 .hero {
-    background-color: var(--hero-bg-color);
-    background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero\ bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    max-width: 1600px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 200px 0px;
+	background-color: var(--hero-bg-color);
+	background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero-bg-mob.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 480px;
+	padding: 118px 0px;
+	margin: auto;
+	text-align: center;
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero-bg-mob-x2.jpg);
+	}
+
+	@include tablet {
+		max-width: 768px;
+		background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero-bg-tablet.jpg);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)),
+				url(../images/hero-bg-tablet-x2.jpg);
+		}
+	}
+
+	@include desctop {
+		max-width: 1600px;
+		padding: 200px 0px;
+		background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero-bg.jpg);
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(var(--hero-bg-overlay), var(--hero-bg-overlay)), url(../images/hero-bg-x2.jpg);
+		}
+	}
 }
 
 .hero__title {
-    width: 696px;
-    margin: auto;
-    margin-bottom: 30px;
+	padding: 0px 45px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-weight: 900;
+	font-size: 26px;
+	line-height: 1.62;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--white-text-color);
 
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white-text-color);
+	@include tablet {
+		padding: 0px 189px;
+	}
+
+	@include desctop {
+		padding: 0px 252px;
+		font-size: 44px;
+		line-height: 1.36;
+	}
 }
 
 .hero__button {
-    padding: 10px 32px;
-    font-family: "Roboto";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    letter-spacing: 0.06em;
-    color: var(--white-text-color);
-    background-color: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    transition: background-color 250ms var(--timing-function);
+	padding: 10px 24px;
+	font-family: "Roboto";
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.88;
+	align-items: center;
+	letter-spacing: 0.06em;
+	color: var(--white-text-color);
+	background-color: var(--blue-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	transition: background-color 250ms var(--timing-function);
 
-    &:hover,
-    &:focus {
-        background-color: var(--blue-hover-color);
-        cursor: pointer;
-    }
+	&:hover,
+	&:focus {
+		background-color: var(--blue-hover-color);
+		cursor: pointer;
+	}
+
+	@include desctop {
+		padding: 10px 32px;
+	}
 }
