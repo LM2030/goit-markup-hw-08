@@ -23,8 +23,6 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .list {
@@ -131,6 +129,7 @@ body {
 .header {
   background-color: var(--white-text-color);
   border-bottom: 1px solid var(--border-heder-line);
+  position: relative;
 }
 
 .header__container,
@@ -140,7 +139,18 @@ body {
 }
 
 .navigation__logo {
-  margin-right: 93px;
+  padding: 16px 0px;
+}
+@media screen and (min-width: 768px) {
+  .navigation__logo {
+    margin-right: 88px;
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__logo {
+    margin-right: 93px;
+  }
 }
 
 .navigation__logo-part1,
@@ -163,19 +173,24 @@ body {
 }
 
 .site-nav__link {
-  display: block;
-  position: relative;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
-  transition: color 250ms var(--timing-function);
+  display: none;
 }
-.site-nav__link:hover, .site-nav__link:focus, .site-nav__link:active {
-  color: var(--blue-color);
+@media screen and (min-width: 768px) {
+  .site-nav__link {
+    display: block;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color 250ms var(--timing-function);
+  }
+  .site-nav__link:hover, .site-nav__link:focus, .site-nav__link:active {
+    color: var(--blue-color);
+  }
 }
 
 .site-nav {
@@ -201,30 +216,47 @@ body {
 }
 
 .site-adress {
-  display: flex;
-  margin-left: auto;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary-text-color);
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-adress {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--primary-text-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-adress {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .site-adress__item {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   justify-content: center;
   align-items: center;
 }
-.site-adress__item .mail {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.site-adress__item:not(:last-child) {
-  margin-right: 50px;
-}
-.site-adress__item:focus, .site-adress__item:hover, .site-adress__item:active {
-  color: var(--blue-color);
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .site-adress__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .site-adress__item .mail {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .site-adress__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .site-adress__item:focus, .site-adress__item:hover, .site-adress__item:active {
+    color: var(--blue-color);
+    cursor: pointer;
+  }
 }
 
 .site-adress__icon {
@@ -244,9 +276,29 @@ body {
   color: var(--primary-text-color);
   transition: color 250ms var(--timing-function);
 }
-.site-adress__item:focus .site-adress__link, .site-adress__item:hover .site-adress__link, .site-adress__item:active .site-adress__link {
-  color: var(--blue-color);
-  cursor: pointer;
+@media screen and (min-width: 1200px) {
+  .site-adress__item:focus .site-adress__link, .site-adress__item:hover .site-adress__link, .site-adress__item:active .site-adress__link {
+    color: var(--blue-color);
+    cursor: pointer;
+  }
+}
+
+.mobile-menu__button-open {
+  position: absolute;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button-open {
+    display: none;
+  }
 }
 
 .hero {
@@ -486,19 +538,16 @@ body {
 @media screen and (min-width: 480px) {
   .team__card {
     max-width: 450px;
-    height: 622px;
   }
 }
 @media screen and (min-width: 768px) {
   .team__card {
     max-width: 354px;
-    height: 536px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__card {
     max-width: 270px;
-    height: 428px;
   }
 }
 
@@ -1206,4 +1255,109 @@ body {
 .modal__button-center {
   display: flex;
   justify-content: center;
+}
+
+.mobile-menu {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  padding: 48px 0px 48px 40px;
+  z-index: 99;
+  background: var(--white-text-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu__button {
+  position: absolute;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+.mobile-menu__button :hover, .mobile-menu__button :focus, .mobile-menu__button :active {
+  fill: var(--blue-color);
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-list__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.mobile-list__text {
+  margin-bottom: 32px;
+}
+.mobile-list__text :hover, .mobile-list__text :focus, .mobile-list__text :active {
+  color: var(--blue-color);
+}
+
+.mobile-list__phone-link {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--blue-color);
+}
+
+.mobile-list__phone {
+  margin-top: 306px;
+  margin-bottom: 32px;
+}
+
+.mobile-list__mail-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mobile-list__mail {
+  margin-bottom: 64px;
+}
+.mobile-list__mail :hover, .mobile-list__mail :focus, .mobile-list__mail :active {
+  color: var(--blue-color);
+}
+
+.mobile-list__social {
+  display: flex;
+}
+
+.mobile-list__social-text {
+  margin-right: 10px;
+}
+
+.mobile-list__border {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-left: 10px;
+}
+
+.mobile-list__social-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--blue-color);
+}
+@media screen and (min-width: 480px) {
+  .mobile-list__social-link {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

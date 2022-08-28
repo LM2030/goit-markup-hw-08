@@ -28,17 +28,14 @@
 
 	@include mobile {
 		max-width: 450px;
-		height: 622px;
 	}
 
 	@include tablet {
 		max-width: 354px;
-		height: 536px;
 	}
 
 	@include desctop {
 		max-width: 270px;
-		height: 428px;
 	}
 }
 
@@ -91,71 +88,3 @@
 .social__link:active .social__icon {
 	fill: var(--white-text-color);
 }
-
-// ІСХОДНІК
-
-// .team {
-//     background-color: var(--team-bg-color);
-// }
-
-// .team__list {
-//     display: flex;
-//     gap: 30px;
-//     text-align: center;
-// }
-
-// .team__card {
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     background-color: var(--white-text-color);
-// }
-
-// .team__name {
-//     margin-top: 30px;
-//     margin-bottom: 10px;
-//     font-weight: 500;
-//     font-size: 16px;
-//     line-height: 1.19;
-//     letter-spacing: 0.03em;
-//     color: var(--title-text-color);
-// }
-
-// .team__job {
-//     margin-bottom: 16px;
-
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 1.19;
-//     letter-spacing: 0.03em;
-//     color: var(--primary-text-color);
-// }
-
-// .social {
-//     display: flex;
-//     justify-content: center;
-//     gap: 10px;
-//     margin-bottom: 30px;
-// }
-
-// .social__link {
-//     width: 44px;
-//     height: 44px;
-//     border-radius: 50%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     fill: var(--icon-main-color);
-//     transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
-
-//     &:hover,
-//     &:focus,
-//     &:active {
-//         background-color: var(--blue-color);
-//     }
-// }
-
-// .social__link:hover .social__icon,
-// .social__link:focus .social__icon,
-// .social__link:active .social__icon {
-//     fill: var(--white-text-color);
-// }
