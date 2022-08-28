@@ -19,39 +19,44 @@
 	</head>
 
 	<body>
+		<div class="mobile-menu js-menu-container" id="mobile-menu">
+			<button class="mobile-menu__button js-close-menu">
+				<svg width="18.67px" height="18.67px">
+					<use href="./images/icons.svg#icon-close-mob"></use>
+				</svg>
+			</button>
+			<ul class="mobile-list list">
+				<li class="mobile-list__text"><a href="./index.html" class="mobile-list__item link">Студія</a> </li>
+				<li class="mobile-list__text"><a href="./portfolio.html" class="mobile-list__item link">Портфоліо</a> </li>
+				<li class="mobile-list__text"><a href="" class="mobile-list__item link">Контакти</a></li>
+				<li class="mobile-list__phone"
+					><a href="tel:+380961111111" class="mobile-list__phone-link link">+380961111111</a></li
+				>
+				<li class="mobile-list__mail"
+					><a href="mailto:info@devstudio.com" class="mobile-list__mail-link link">info@devstudio.com</a></li
+				>
+			</ul>
+			<ul class="mobile-list__social list">
+				<li class="mobile-list__social-text"
+					><a href="" class="mobile-list__social-link link">Instagram</a><span class="mobile-list__border"></span>
+				</li>
+				<li class="mobile-list__social-text">
+					<a href="" class="mobile-list__social-link link">Twitter</a><span class="mobile-list__border"></span>
+				</li>
+				<li class="mobile-list__social-text">
+					<a href="" class="mobile-list__social-link link">Facebook</a><span class="mobile-list__border"></span>
+				</li>
+				<li class="mobile-list__social-text"> <a href="" class="mobile-list__social-link link">LinkedIn</a> </li>
+			</ul>
+		</div>
+
 		<header class="header">
 			<div class="container">
-				<div class="mobile-menu is-hidden" mobile-modal>
-					<button type="button" class="mobile-menu__button" mobile-modal-close>
-						<svg width="18.67px" height="18.67px">
-							<use href="./images/icons.svg#icon-close-mob"></use>
-						</svg>
-					</button>
-					<ul class="mobile-list list">
-						<li class="mobile-list__text"><a href="./index.html" class="mobile-list__item link">Студія</a> </li>
-						<li class="mobile-list__text"><a href="./portfolio.html" class="mobile-list__item link">Портфоліо</a> </li>
-						<li class="mobile-list__text"><a href="" class="mobile-list__item link">Контакти</a></li>
-						<li class="mobile-list__phone"
-							><a href="tel:+380961111111" class="mobile-list__phone-link link">+380961111111</a></li
-						>
-						<li class="mobile-list__mail"
-							><a href="mailto:info@devstudio.com" class="mobile-list__mail-link link">info@devstudio.com</a></li
-						>
-					</ul>
-					<ul class="mobile-list__social list">
-						<li class="mobile-list__social-text"
-							><a href="" class="mobile-list__social-link link">Instagram</a><span class="mobile-list__border"></span>
-						</li>
-						<li class="mobile-list__social-text">
-							<a href="" class="mobile-list__social-link link">Twitter</a><span class="mobile-list__border"></span>
-						</li>
-						<li class="mobile-list__social-text">
-							<a href="" class="mobile-list__social-link link">Facebook</a><span class="mobile-list__border"></span>
-						</li>
-						<li class="mobile-list__social-text"> <a href="" class="mobile-list__social-link link">LinkedIn</a> </li>
-					</ul>
-				</div>
-
+				<button class="mobile-menu__button-open js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg width="24px" height="16px">
+						<use href="./images/icons.svg#icon-menu-mob"></use>
+					</svg>
+				</button>
 				<div class="header__container">
 					<nav class="navigation">
 						<a lang="en" href="./index.html" class="link navigation__logo"
@@ -80,11 +85,6 @@
 						</li>
 					</ul>
 				</div>
-				<button type="button" class="mobile-menu__button-open" mobile-modal-open>
-					<svg width="24px" height="16px">
-						<use href="./images/icons.svg#icon-menu-mob"></use>
-					</svg>
-				</button>
 			</div>
 		</header>
 		<main>
